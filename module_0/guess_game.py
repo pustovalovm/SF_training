@@ -1,3 +1,6 @@
+# Written by Mikhail Pustovalov, pustovalovm@gmail.com
+
+# Imports
 import numpy as np
 import sys
 
@@ -37,8 +40,20 @@ def runner(mode, cycles, num_max):
     """
     Initializes sequence of random thinked numbers with length of (cycles) and
     maximum of (num_max). Runs selected algorithm (mode) for (cycles) times
-    with maximum thinked number of (num_max).
-    Ar
+    with maximum thinked number of (num_max). Asks user if another try is
+    needed.
+    Arguments:
+        mode - algorithm to be run.
+            mode = 0 - random guess
+            mode = 1 - linear guess
+            mode = 2 - binary guess
+            mode = 3 - all above
+        cycles - a list of np.random.randint integer numbers is generetad and
+        algorithm is run along this list for each number as thinked.
+        num_max - highest possible thinked number.
+    Returns:
+         False if the user has selected to run the script again
+         True if the user has selected to stop execution
     """
     thinked_numbers = np.random.randint(1, num_max, size=cycles)
     if mode == 0:
@@ -65,7 +80,6 @@ def runner(mode, cycles, num_max):
             results_binary.append(binary_search(number, num_max))
         print(f"Число угадано в среднем за {int(np.mean(results_binary))} "
               f"попыток при помощи произвольного поиска.")
-        print(max(results_binary))
     elif mode == 3:
         results_rand, results_linear, results_binary = [], [], []
         print(f"\nЗагадано число от 1 до {num_max}, число циклов - {cycles}")
@@ -88,7 +102,16 @@ def runner(mode, cycles, num_max):
 
 
 def random_search(number, num_max):
-    """Random search, one cycle"""
+    """
+    Random search, one cycle. The function chooses random number from 1 to
+    num_max and compares it to the thinked number (number) in an infinite loop
+    until it finds one equal to thinked number.
+    Arguments:
+        number - thinked number
+        num_max - highest possible value of thinked number
+    Returns:
+        Int number of attempts to guess required to find thinked number
+    """
     count = 0
     while True:  # Limit number of tries to avoid infinite cycle
         count += 1
@@ -98,7 +121,16 @@ def random_search(number, num_max):
 
 
 def linear_search(number, num_max):
-    """Simple linear search algorithm"""
+    """
+    Linear search, one cycle. The function goes through the list of numbers
+    from 1 to num_max and compares each number to the thinked number (number)
+    until it finds one equal to thinked number.
+    Arguments:
+        number - thinked number
+        num_max - highest possible value of thinked number
+    Returns:
+        Int number of attempts to guess required to find thinked number
+    """
     count = 0
     for guess in range(1, num_max+1):
         count += 1
@@ -107,7 +139,20 @@ def linear_search(number, num_max):
 
 
 def binary_search(number, num_max):
-    """Binary search, one cycle"""
+    """
+    Binary search, one cycle. The function creates the list of numbers
+    from 1 to num_max. On each step it takes the median value in this list
+    compares number to the thinked number (number). If the number was not
+    guessed the function takes a half of the list ("left" thus lesser if our
+    median is higher than thinked number and "right" otherwise) as a new
+    guess list and repeats this process for this new list until it finds one
+    median equal to thinked number.
+    Arguments:
+        number - thinked number
+        num_max - highest possible value of thinked number
+    Returns:
+        Int number of attempts to guess required to find thinked number
+    """
     guess_ls = range(1, num_max + 1)
     count = 0
     while len(guess_ls) > 0:
@@ -116,7 +161,7 @@ def binary_search(number, num_max):
         if guess < number:
             guess_ls = guess_ls[len(guess_ls)//2:]
         elif guess > number:
-            guess_ls = guess_ls[:len(guess_ls) // 2]
+            guess_ls = guess_ls[:len(guess_ls)//2]
         else:
             return count
 
