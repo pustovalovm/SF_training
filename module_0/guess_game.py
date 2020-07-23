@@ -20,9 +20,11 @@ def get_inputs():
                      '2 - Бинарный поиск\n'
                      '3 - Все\n'
                      '4 - Выход\n')
+        if mode == '4':
+            sys.exit()
         cycles = input('Введите количество запусков: ')
         num_max = input('Введите максимальное возможное загаданное число: ')
-        if mode not in ['0', '1', '2', '3', '4'] or not cycles.isdigit()\
+        if mode not in ['0', '1', '2', '3'] or not cycles.isdigit()\
                 or int(cycles) < 1 or not num_max.isdigit()\
                 or int(num_max) < 1:
             next_action = input('Некорректный ввод!\n'
@@ -71,7 +73,7 @@ def runner(mode, cycles, num_max):
         for number in thinked_numbers:
             results_linear.append(linear_search(number, num_max))
         print(f"Число угадано в среднем за {int(np.mean(results_linear))} "
-              f"попыток при помощи произвольного поиска.")
+              f"попыток при помощи линейного поиска.")
     elif mode == 2:
         print(f"Алгоритм бинарного поиска, {cycles} циклов.\nЗагадано "
               f"число от 1 до {num_max}.")
@@ -79,7 +81,7 @@ def runner(mode, cycles, num_max):
         for number in thinked_numbers:
             results_binary.append(binary_search(number, num_max))
         print(f"Число угадано в среднем за {int(np.mean(results_binary))} "
-              f"попыток при помощи произвольного поиска.")
+              f"попыток при помощи бинарного поиска.")
     elif mode == 3:
         results_rand, results_linear, results_binary = [], [], []
         print(f"\nЗагадано число от 1 до {num_max}, число циклов - {cycles}")
@@ -93,7 +95,6 @@ def runner(mode, cycles, num_max):
               f"{int(np.mean(results_linear))} попыток\n"
               f"Алгоритм бинарного поиска - "
               f"{int(np.mean(results_binary))} попыток\n")
-
     cont_mode = input('Попробовать ещё?\n1 - Да\n2 - Нет\n')
     if cont_mode == '1':
         return False
