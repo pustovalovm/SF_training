@@ -11,4 +11,5 @@
 4. module_3 - первый проект с ML, прогнозирование рейтинга ресторана на tripadvisor.com.\
 [Ссылка на kaggle.](https://www.kaggle.com/mikhailpustovalov/mikhail-pustovalov-sf-tripadvisor-rating-v1 "Kaggle notebook")\
 Дополнительно написан скрейпер для получения данных с tripadvisor, см. папку version 2.
+5. module_4 - проект по работе с базой данных SQL.
 
