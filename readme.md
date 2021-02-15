@@ -12,4 +12,5 @@
 [Ссылка на kaggle.](https://www.kaggle.com/mikhailpustovalov/mikhail-pustovalov-sf-tripadvisor-rating-v1 "Kaggle notebook")\
 Дополнительно написан скрейпер для получения данных с tripadvisor, см. папку version 2.
 5. module_4 - проект по работе с базой данных SQL.
-
+6. module_5 - проект "Банковский скоринг" - с применением различных алгоритмов ML, от наивного байесовского классификатора до CatBoost.\
+[Ссылка на kaggle.](https://www.kaggle.com/mikhailpustovalov/sf-dst-credit-scoring "Kaggle notebook")
