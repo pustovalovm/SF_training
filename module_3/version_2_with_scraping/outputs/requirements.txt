@@ -26,7 +26,7 @@ ipywidgets==7.5.1
 itemadapter==0.2.0
 itemloaders==1.0.4
 jedi @ file:///tmp/build/80754af9/jedi_1598371611696/work
-Jinja2==2.11.2
+Jinja2==2.11.3
 jmespath==0.10.0
 joblib @ file:///tmp/build/80754af9/joblib_1601912903842/work
 json5==0.9.5
