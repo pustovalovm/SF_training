@@ -14,3 +14,5 @@
 5. module_4 - проект по работе с базой данных SQL.
 6. module_5 - проект "Банковский скоринг" - с применением различных алгоритмов ML, от наивного байесовского классификатора до CatBoost.\
 [Ссылка на kaggle.](https://www.kaggle.com/mikhailpustovalov/sf-dst-credit-scoring "Kaggle notebook")
+7. module_6 - проект "Выбираем авто выгодно" - сбор данных сайта auto.ru, обучение различных алгоритмов на нём для предсказания цены автомобиля, ансамблирование моделей.\
+[Соревнование на kaggle.](https://www.kaggle.com/c/sf-dst-car-price-prediction)
