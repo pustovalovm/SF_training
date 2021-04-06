@@ -102,7 +102,7 @@ traitlets @ file:///tmp/build/80754af9/traitlets_1602787416690/work
 Twisted==20.3.0
 txt2tags==3.7
 ua-parser==0.10.0
-urllib3==1.26.2
+urllib3==1.26.4
 user-agents==2.2.0
 w3lib==1.22.0
 wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
