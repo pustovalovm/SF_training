@@ -20,7 +20,7 @@ ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/wor
 ipython-sql==0.4.0
 ipywidgets @ file:///tmp/build/80754af9/ipywidgets_1601490159889/work
 jedi==0.17.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 json5 @ file:///home/conda/feedstock_root/build_artifacts/json5_1600692310011/work
 jsonschema @ file:///tmp/build/80754af9/jsonschema_1602607155483/work
 jupyter==1.0.0
