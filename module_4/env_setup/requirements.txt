@@ -27,7 +27,7 @@ jupyter==1.0.0
 jupyter-client @ file:///tmp/build/80754af9/jupyter_client_1601311786391/work
 jupyter-console @ file:///tmp/build/80754af9/jupyter_console_1598884538475/work
 jupyter-core @ file:///tmp/build/80754af9/jupyter_core_1606148996965/work
-jupyterlab==2.2.9
+jupyterlab==2.2.10
 jupyterlab-pygments @ file:///tmp/build/80754af9/jupyterlab_pygments_1601490720602/work
 jupyterlab-server @ file:///home/conda/feedstock_root/build_artifacts/jupyterlab_server_1593951277307/work
 kiwisolver @ file:///tmp/build/80754af9/kiwisolver_1604014535162/work
