@@ -74,7 +74,7 @@ Send2Trash @ file:///tmp/build/80754af9/send2trash_1607525499227/work
 sip==4.19.13
 six @ file:///tmp/build/80754af9/six_1605205327372/work
 SQLAlchemy @ file:///tmp/build/80754af9/sqlalchemy_1608243708429/work
-sqlparse==0.4.1
+sqlparse==0.4.2
 terminado==0.9.1
 testpath==0.4.4
 tornado @ file:///tmp/build/80754af9/tornado_1606942300299/work
