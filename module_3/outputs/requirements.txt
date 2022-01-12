@@ -161,7 +161,7 @@ pep8==1.7.1
 pexpect==4.8.0
 pickleshare==0.7.5
 Pillow @ file:///tmp/build/80754af9/pillow_1603822255246/work
-pipenv==2020.11.15
+pipenv==2022.1.8
 pkginfo==1.6.1
 plotly @ file:///tmp/build/80754af9/plotly_1605121809988/work
 pluggy==0.13.1
