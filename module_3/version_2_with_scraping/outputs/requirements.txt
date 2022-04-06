@@ -99,7 +99,7 @@ testpath==0.4.4
 threadpoolctl @ file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
 tornado==6.0.4
 traitlets @ file:///tmp/build/80754af9/traitlets_1602787416690/work
-Twisted==20.3.0
+Twisted==22.2.0
 txt2tags==3.7
 ua-parser==0.10.0
 urllib3==1.26.2
