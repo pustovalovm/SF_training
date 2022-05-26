@@ -259,7 +259,7 @@ toolz @ file:///tmp/build/80754af9/toolz_1601054250827/work
 tornado==6.0.4
 tqdm @ file:///tmp/build/80754af9/tqdm_1605303662894/work
 traitlets @ file:///tmp/build/80754af9/traitlets_1602787416690/work
-Twisted==20.3.0
+Twisted==22.4.0
 typing-extensions @ file:///tmp/build/80754af9/typing_extensions_1598376058250/work
 ua-parser==0.10.0
 ujson @ file:///tmp/build/80754af9/ujson_1602523317881/work
