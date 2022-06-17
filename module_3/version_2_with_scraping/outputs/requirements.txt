@@ -85,7 +85,7 @@ queuelib==1.5.0
 requests==2.25.0
 scikit-learn @ file:///tmp/build/80754af9/scikit-learn_1598376899566/work
 scipy @ file:///tmp/build/80754af9/scipy_1597686649129/work
-Scrapy==2.4.1
+Scrapy==2.6.1
 scrapy-user-agents==0.1.1
 seaborn @ file:///tmp/build/80754af9/seaborn_1600553570093/work
 Send2Trash==1.5.0
