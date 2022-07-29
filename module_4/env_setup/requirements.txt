@@ -33,7 +33,7 @@ jupyterlab-server @ file:///home/conda/feedstock_root/build_artifacts/jupyterlab
 kiwisolver @ file:///tmp/build/80754af9/kiwisolver_1604014535162/work
 MarkupSafe==1.1.1
 matplotlib @ file:///tmp/build/80754af9/matplotlib-base_1603378225747/work
-mistune==0.8.4
+mistune==2.0.3
 mkl-fft==1.2.0
 mkl-random==1.1.1
 mkl-service==2.3.0
