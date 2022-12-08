@@ -4,7 +4,7 @@ attrs @ file:///tmp/build/80754af9/attrs_1604765588209/work
 backcall==0.2.0
 bleach @ file:///tmp/build/80754af9/bleach_1600439572647/work
 brotlipy==0.7.0
-certifi==2020.12.5
+certifi==2022.12.7
 cffi @ file:///tmp/build/80754af9/cffi_1606255081583/work
 chardet @ file:///home/conda/feedstock_root/build_artifacts/chardet_1607673832666/work
 cryptography @ file:///tmp/build/80754af9/cryptography_1607635341180/work
