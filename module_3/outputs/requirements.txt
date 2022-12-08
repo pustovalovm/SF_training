@@ -29,7 +29,7 @@ boto==2.49.0
 Bottleneck==1.3.2
 brotlipy==0.7.0
 bs4==0.0.1
-certifi==2020.6.20
+certifi==2022.12.7
 cffi @ file:///tmp/build/80754af9/cffi_1605538068321/work
 chardet @ file:///tmp/build/80754af9/chardet_1605303185383/work
 click==7.1.2
